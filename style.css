@@ -1,0 +1,32 @@
+* {
+  /* margin: 0; */
+  padding: 0;
+}
+
+body {
+  padding: 30px;
+}
+
+.voting {
+  max-width: 440px;
+}
+
+.voting__radio {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.voting__wrapper {
+  flex-basis: 40%;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid #e2e4e9;
+}
+
+.voting__wrapper--active {
+  border: 1px solid #375dfb;
+}

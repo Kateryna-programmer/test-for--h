@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+
+  <div class="voting">
+    <h3 class="voting__title">
+      Голосование по прибытию
+    </h3>
+
+    <div class="voting__radio">
+
+      <div class="voting__wrapper voting__wrapper--active">
+        <label for="1">
+          <h4>Я в строю</h4>
+          <p>Смогу приехать</p>
+        </label>
+        <input type="radio" class="voting__input" name="voting" id="1">
+      </div>
+
+      <div class="voting__wrapper">
+        <label for="2">
+          <h4>Под вопросом</h4>
+          <p>Уточню позже</p>
+        </label>
+        <input type="radio" class="voting__input" name="voting" id="2">
+      </div>
+      <div class="voting__wrapper">
+        <label for="3">
+          <h4>300</h4>
+          <p>Ранен или заболел</p>
+        </label>
+        <input type="radio" class="voting__input" name="voting" id="3">
+      </div>
+      <div class="voting__wrapper">
+        <label for="4">
+          <h4>400</h4>
+          <p>Загасился</p>
+        </label>
+        <input type="radio" class="voting__input" name="voting" id="4">
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <!-- <script>
+    const inputs = document.querySelectorAll('.voting__input');
+    inputs.forEach(input => {
+      input.addEventListener('click', function() {
+        const wrapper = this.parentElement;
+        document.querySelectorAll('.voting__wrapper').forEach(item => {
+          item.classList.remove('voting__wrapper--active');
+        });
+        wrapper.classList.add('voting__wrapper--active');
+      });
+    });
+  </script> -->
+
+</body>
+
+</html>
