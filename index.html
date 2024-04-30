@@ -4,60 +4,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
 
+  <div class="container">
+    <section class="voting">
+      <h3 class="voting__title">
+        Голосование по прибытию
+      </h3>
 
+      <div class="voting__radio">
 
-  <div class="voting">
-    <h3 class="voting__title">
-      Голосование по прибытию
-    </h3>
+        <div class="voting__wrapper voting__wrapper--active">
+          <label for="1">
+            <h4>Я в строю</h4>
+            <p>Смогу приехать</p>
+          </label>
+          <input type="radio" class="voting__input" name="voting" id="1">
+        </div>
 
-    <div class="voting__radio">
+        <div class="voting__wrapper">
+          <label for="2">
+            <h4>Под вопросом</h4>
+            <p>Уточню позже</p>
+          </label>
+          <input type="radio" class="voting__input" name="voting" id="2">
+        </div>
+        <div class="voting__wrapper">
+          <label for="3">
+            <h4>300</h4>
+            <p>Ранен или заболел</p>
+          </label>
+          <input type="radio" class="voting__input" name="voting" id="3">
+        </div>
+        <div class="voting__wrapper">
+          <label for="4">
+            <h4>400</h4>
+            <p>Загасился</p>
+          </label>
+          <input type="radio" class="voting__input" name="voting" id="4">
+        </div>
 
-      <div class="voting__wrapper voting__wrapper--active">
-        <label for="1">
-          <h4>Я в строю</h4>
-          <p>Смогу приехать</p>
-        </label>
-        <input type="radio" class="voting__input" name="voting" id="1">
       </div>
 
-      <div class="voting__wrapper">
-        <label for="2">
-          <h4>Под вопросом</h4>
-          <p>Уточню позже</p>
-        </label>
-        <input type="radio" class="voting__input" name="voting" id="2">
-      </div>
-      <div class="voting__wrapper">
-        <label for="3">
-          <h4>300</h4>
-          <p>Ранен или заболел</p>
-        </label>
-        <input type="radio" class="voting__input" name="voting" id="3">
-      </div>
-      <div class="voting__wrapper">
-        <label for="4">
-          <h4>400</h4>
-          <p>Загасился</p>
-        </label>
-        <input type="radio" class="voting__input" name="voting" id="4">
-      </div>
 
-    </div>
+    </section>
 
 
+
+
+    <section>
+      <div class="groupmates">
+        <div class="groupmates__left">
+          <p class="groupmates__title">Одногруппники</p>
+          <div class="groupmates__line"></div>
+          <div class="groupmates__list">
+            <div class="groupmates__item">
+              <div class="groupmates__photo"><img src="img/mate-1.png" alt="photo1"></div>
+              <div class="groupmates__text">
+                <p>Борис Кобальт</p>
+                <span class="groupmates__name">Коба</span>
+                <span class="groupmates__rank">Майор</span>
+                <span class="groupmates__position">Снайпер</span>
+              </div>
+              <div class="groupmates__btn"><button>Написать</button></div>
+            </div>
+            <div class="groupmates__item">
+              <div class="groupmates__photo"><img src="img/mate-2.png" alt="photo1"></div>
+              <div class="groupmates__text">
+                <p>Вася Кравцов</p>
+                <span class="groupmates__name">Кравец</span>
+                <span class="groupmates__rank">Старлей</span>
+                <span class="groupmates__position">Медик</span>
+              </div>
+              <div class="groupmates__btn"><button>Написать</button></div>
+            </div>
+            <div class="groupmates__item">
+              <div class="groupmates__photo"><img src="img/mate-2.png" alt="photo1"></div>
+              <div class="groupmates__text">
+                <p>Евгений Синицин</p>
+                <span class="groupmates__name">Синица</span>
+                <span class="groupmates__rank">Капитан</span>
+                <span class="groupmates__position">Разведчик</span>
+              </div>
+              <div class="groupmates__btn"><button>Написать</button></div>
+            </div>
+            <div class="groupmates__item">
+              <div class="groupmates__photo"><img src="img/mate-3.png" alt="photo1"></div>
+              <div class="groupmates__text">
+                <p>Владимир Ребров</p>
+                <span class="groupmates__name">ТТ</span>
+                <span class="groupmates__rank">Майор</span>
+                <span class="groupmates__position">Снайпер</span>
+              </div>
+              <div class="groupmates__btn"><button>Написать</button></div>
+            </div>
+            <div class="groupmates__item" style="background: linear-gradient(0deg, #FFFFFF 14.57%, rgba(255, 255, 255, 0) 100%);
+            ">
+              <div class="groupmates__photo"><img src="img/mate-1.png" alt="photo1"></div>
+              <div class="groupmates__text">
+                <p>Борис Кобальт</p>
+                <span class="groupmates__name">Коба</span>
+                <span class="groupmates__rank">Майор</span>
+                <span class="groupmates__position">Снайпер</span>
+              </div>
+              <div class="groupmates__btn"><button>Написать</button></div>
+            </div>
+            <div class="groupmates__item">
+              <div class="groupmates__photo"><img src="img/mate-2.png" alt="photo1"></div>
+              <div class="groupmates__text">
+                <p>Вася Кравцов</p>
+                <span class="groupmates__name">Кравец</span>
+                <span class="groupmates__rank">Старлей</span>
+                <span class="groupmates__position">Медик</span>
+              </div>
+              <div class="groupmates__btn"><button>Написать</button></div>
+            </div>
+            <div class="groupmates__item">
+              <div class="groupmates__photo"><img src="img/mate-2.png" alt="photo1"></div>
+              <div class="groupmates__text">
+                <p>Евгений Синицин</p>
+                <span class="groupmates__name">Синица</span>
+                <span class="groupmates__rank">Капитан</span>
+                <span class="groupmates__position">Разведчик</span>
+              </div>
+              <div class="groupmates__btn"><button>Написать</button></div>
+            </div>
+            <div class="groupmates__item">
+              <div class="groupmates__photo"><img src="img/mate-3.png" alt="photo1"></div>
+              <div class="groupmates__text">
+                <p>Владимир Ребров</p>
+                <span class="groupmates__name">ТТ</span>
+                <span class="groupmates__rank">Майор</span>
+                <span class="groupmates__position">Снайпер</span>
+              </div>
+              <div class="groupmates__btn"><button>Написать</button></div>
+            </div>
+            <div class="groupmate__shadow"></div>
+          </div>
+        </div>
+        <div class="groupmates__right">
+          <h3>Ваша оценка за урок</h3>
+          <img src="img/stars.png" alt="stars">
+          <div class="groupmates__item">
+            <div class="groupmates__photo"><img src="img/mate-4.png" alt="photo1"></div>
+            <div class="groupmates__text">
+              <p>Александр Каспаров</p>
+              <span class="groupmates__name">Главный Инструктор</span>
+            </div>
+          </div>
+          <div class="groupmates__comment">
+            <p>Молодец, так держать! Жду на следующем занятии. Советую пройтись по материалам топографии.
+            </p>
+            <br>
+            <br>
+          </div>
+          <div class="groupmates__btns">
+            <button class="groupmates__btn--left">Задать вопрос</button>
+            <button class="groupmates__btn--right">Оставить отзыв</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
   </div>
 
-  <!-- <script>
+  <script>
     const inputs = document.querySelectorAll('.voting__input');
     inputs.forEach(input => {
-      input.addEventListener('click', function() {
+      input.addEventListener('click', function () {
         const wrapper = this.parentElement;
         document.querySelectorAll('.voting__wrapper').forEach(item => {
           item.classList.remove('voting__wrapper--active');
@@ -65,7 +186,7 @@
         wrapper.classList.add('voting__wrapper--active');
       });
     });
-  </script> -->
+  </script>
 
 </body>
 
